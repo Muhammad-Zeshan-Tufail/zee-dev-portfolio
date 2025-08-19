@@ -20,7 +20,6 @@ const BlogCard = ({ title, description, image, date, slug }: BlogProps) => {
         height={300}
         className="rounded-lg object-cover"
       />
-
       {/* Blog Content */}
       <div className="mt-4">
         <p className="text-gray-400 text-sm">{date}</p>
