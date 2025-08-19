@@ -13,13 +13,13 @@ const Header = () => {
 
   // Navigation items
   const navItems = [
-    { name: "Home", href: "#" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Experience", href: "#experience" },
-    { name: "Blogs", href: "#blogs" }, // Added Blogs section
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/#" },
+    { name: "About", href: "/#about" },
+    { name: "Skills", href: "/#skills" },
+    { name: "Projects", href: "/#projects" },
+    { name: "Experience", href: "/#experience" },
+    { name: "Blogs", href: "/#blogs" }, // Added Blogs section
+    { name: "Contact", href: "/#contact" },
   ];
 
   // Check if scrolled
@@ -37,11 +37,10 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled
           ? "bg-gray-900/95 backdrop-blur-md py-2 shadow-lg"
           : "bg-transparent backdrop-blur-sm py-4"
-      }`}
+        }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo Section */}
