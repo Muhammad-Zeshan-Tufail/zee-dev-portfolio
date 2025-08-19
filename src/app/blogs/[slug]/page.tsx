@@ -3,11 +3,11 @@ import Image from "next/image";
 
 type BlogDetailsProps = {
   params: {
-    slug: string;
+    slug: string | string[];
   };
 };
 
-export default function BlogDetails({ params: { slug } }: BlogDetailsProps) {
+export default function BlogDetails({ params: { slug } }: any) {
   const blogPost = blogPosts.find((post) => post.slug === slug);
 
   if (!blogPost) {
